@@ -1,6 +1,5 @@
 FROM golang:1.13.4 AS builder
 RUN go version
-ARG SSH_PRIVATE_KEY
 
 COPY . /app/
 WORKDIR /app/
